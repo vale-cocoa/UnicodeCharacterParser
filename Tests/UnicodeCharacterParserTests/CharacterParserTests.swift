@@ -25,18 +25,4 @@ import XCTest
 
 final class UnicodeCharacterParserTests: XCTestCase {
     
-    func testSilly() {
-        let url = randomUTF8pageURL
-        var sut = UnicodeCharacterParser<UTF8>(streamOfUnicodeCodeUnits: url)!
-        let expectedResult = try! String(contentsOf: url, encoding: .utf8)
-        var result = ""
-        while let c = sut.next() {
-            result.append(c)
-        }
-        XCTAssertNil(sut.error)
-        XCTAssertEqual(result, expectedResult)
-    }
-    
-    func testSilly2()
-    
 }
