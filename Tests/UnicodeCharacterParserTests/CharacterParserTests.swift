@@ -37,4 +37,6 @@ final class UnicodeCharacterParserTests: XCTestCase {
         XCTAssertEqual(result, expectedResult)
     }
     
+    func testSilly2()
+    
 }
